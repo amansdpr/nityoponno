@@ -1,5 +1,5 @@
 /*
-Template Name: Grofarweb - Online Grocery Supermarket HTML Template
+Template Name: nityoponno - Online Grocery Supermarket HTML Template
 Author: Askbootstrap
 Author URI: https://themeforest.net/user/askbootstrap
 Version: 1.0
