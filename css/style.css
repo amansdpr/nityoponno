@@ -1166,3 +1166,7 @@ label {
 		display: none;
 	}
 }
+
+a.btn-apple {
+    display: none;
+}

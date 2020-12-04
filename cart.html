@@ -53,8 +53,10 @@
       </div>
       <!-- Nav bar -->
       <div class="bg-white shadow-sm osahan-main-nav">
-         <nav class="navbar navbar-expand-lg navbar-light bg-white osahan-header py-0 container">
-            <a class="navbar-brand mr-0" href="index.html"><img class="img-fluid logo-img" src="img/logo.png"></a>
+         <nav class="navbar navbar-expand-lg navbar-light bg-white osahan-header pt-3 pb-3 container">
+            <a class="navbar-brand mr-0" href="index.html">
+               <img class="img-fluid logo-img" src="img/logo.png">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,77 +70,20 @@
                   </div>
                </div>
             </div>
-            
+
             <div class="ml-auto d-flex align-items-center">
-               <!-- login/signup -->
-               <a href="#" data-toggle="modal" data-target="#login" class="mr-2 text-dark bg-light rounded-pill p-2 icofont-size border shadow-sm">
-               <i class="icofont-login"></i>
-               </a>
-               <!-- my account -->
-               <div class="dropdown mr-3">
-                  <a href="#" class="dropdown-toggle text-dark" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="img/user.png" class="img-fluid rounded-circle header-user mr-2"> Hi Osahan
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right top-profile-drop" aria-labelledby="dropdownMenuButton">
-                     <a class="dropdown-item" href="my_account.html">My account</a>
-                     <a class="dropdown-item" href="promos.html">Promos</a>
-                     <a class="dropdown-item" href="my_address.html">My address</a>
-                     <a class="dropdown-item" href="terms_conditions.html">Terms & conditions</a>
-                     <a class="dropdown-item" href="help_support.html">Help & support</a>
-                     <a class="dropdown-item" href="help_ticket.html">Help ticket</a>
-                     <a class="dropdown-item" href="signin.html">Logout</a>
-                  </div>
-               </div>
-               <!-- notification -->
-               <div class="dropdown">
-                  <a href="#" class="text-dark dropdown-toggle not-drop" id="dropdownMenuNotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     <i class="icofont-notification d-flex align-items-center bg-light rounded-pill p-2 icofont-size border shadow-sm">
-                        <!-- <p class="mt-n2 mb-0 font-weight-bold text-success">2</p> -->
-                     </i>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right p-0 osahan-notifications-main" aria-labelledby="dropdownMenuNotification">
-                     <!-- notification 1 -->
-                     <div class="osahan-notifications bg-white border-bottom p-2">
-                        <div class="position-absolute ml-n1 py-2"><i class="icofont-check-circled text-white bg-success rounded-pill p-1"></i></div>
-                        <a href="status_complete.html" class="text-decoration-none text-dark">
-                           <div class="notifiction small">
-                              <div class="ml-3">
-                                 <p class="font-weight-bold mb-1">Yay! Order Complete</p>
-                                 <p class="small m-0"><i class="icofont-ui-calendar"></i> Today, 05:14 AM</p>
-                              </div>
-                           </div>
-                        </a>
-                     </div>
-                     <!-- notification 2 -->
-                     <div class="osahan-notifications bg-white border-bottom p-2">
-                        <a href="status_onprocess.html" class="text-decoration-none text-muted">
-                           <div class="notifiction small">
-                              <div class="ml-3">
-                                 <p class="font-weight-bold mb-1">Yipiee. order Success</p>
-                                 <p class="small m-0"><i class="icofont-ui-calendar"></i> Monday, 08:30 PM</p>
-                              </div>
-                           </div>
-                        </a>
-                     </div>
-                     <!-- notification 3 -->
-                     <div class="osahan-notifications bg-white p-2">
-                        <a href="status_onprocess.html" class="text-decoration-none text-muted">
-                           <div class="notifiction small">
-                              <div class="ml-3">
-                                 <p class="font-weight-bold mb-1">New Promos Coming</p>
-                                 <p class="small m-0"><i class="icofont-ui-calendar"></i> Sunday, 10:30 AM</p>
-                              </div>
-                           </div>
-                        </a>
-                     </div>
-                  </div>
-               </div>
                <!-- cart -->
-               <a href="cart.html" class="ml-2 text-dark bg-light rounded-pill p-2 icofont-size border shadow-sm">
+               <a href="cart.html" class="mr-3 text-dark bg-light rounded-pill p-2 icofont-size border shadow-sm">
                <i class="icofont-shopping-cart"></i>
                </a>
+               <!-- login/signup -->
+               <a href="#" data-toggle="modal" data-target="#login" class="btn btn-success">
+               Sign In
+               </a>
             </div>
+
          </nav>
+
          <!-- Menu bar -->
          <div class="bg-color-head">
             <div class="container menu-bar d-flex align-items-center">
@@ -613,15 +558,17 @@
                                     <li class="nav-item" role="presentation">
                                        <a class="nav-link active text-dark" id="credit-tab" data-toggle="tab" href="#credit" role="tab" aria-controls="credit"
                                           aria-selected="true">
-                                          <p class="mb-0 font-weight-bold"><i class="icofont-credit-card mr-2"></i> Credit/Debit Card</p>
+                                          <p class="mb-0 font-weight-bold"><i class="icofont-credit-card mr-2"></i> Bkash/Nogod/Rocket</p>
                                        </a>
                                     </li>
-                                    <li class="nav-item" role="presentation">
+
+                                    <!-- <li class="nav-item" role="presentation">
                                        <a class="nav-link text-dark" id="banking-tab" data-toggle="tab" href="#banking" role="tab" aria-controls="banking"
                                           aria-selected="false">
                                           <p class="mb-0 font-weight-bold"><i class="icofont-globe mr-2"></i> Net Banking</p>
                                        </a>
-                                    </li>
+                                    </li> -->
+
                                     <li class="nav-item" role="presentation">
                                        <a class="nav-link text-dark" id="cash-tab" data-toggle="tab" href="#cash" role="tab" aria-controls="cash"
                                           aria-selected="false">
@@ -656,7 +603,8 @@
                                           </form>
                                        </div>
                                     </div>
-                                    <div class="tab-pane fade" id="banking" role="tabpanel" aria-labelledby="banking-tab">
+
+                                    <!-- <div class="tab-pane fade" id="banking" role="tabpanel" aria-labelledby="banking-tab">
                                        <div class="osahan-card-body pt-3">
                                           <form>
                                              <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
@@ -683,7 +631,8 @@
                                              </div>
                                           </form>
                                        </div>
-                                    </div>
+                                    </div> -->
+                                    
                                     <div class="tab-pane fade" id="cash" role="tabpanel" aria-labelledby="cash-tab">
                                        <div class="custom-control custom-checkbox pt-3">
                                           <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
