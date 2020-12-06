@@ -568,7 +568,7 @@ span.c-number {
 }
 
 .c-it img {
-	height: 40px;
+	height: 76px;
 }
 
 .opt {
@@ -620,6 +620,17 @@ span.c-number {
 	border: 1px solid #eff2f5;
 	border-radius: 50px;
 }
+
+.btn-facebook {
+	color: #fff;
+	background-color: #3b5998;
+}
+
+.btn-facebook:hover {
+	background-color: #3b5998;
+}
+
+
 
 label {
 	margin: 0 0 2px 0;
@@ -1118,6 +1129,51 @@ label {
 
 .bg-color-head {
 	background-color: #222c6d !important;
+}
+
+.bg-lightpink {
+	background-color: #f9dcd3;
+}
+
+.bg-lightgrey {
+	background-color: #e5e5f9;
+}
+
+.bg-lightorange {
+	background-color: #fce1a3;
+}
+
+.navbar-fixed.fixed-top{
+    -webkit-animation: navbar-show .25s;
+    animation: navbar-show .25s;
+}
+
+@-webkit-keyframes navbar-show {
+    from {
+        -webkit-transform: translateY(-0.75rem);
+        transform: translateY(-0.75rem);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes navbar-show {
+    from {
+        -webkit-transform: translateY(-0.75rem);
+        transform: translateY(-0.75rem);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
 }
 
 .bg-offer {

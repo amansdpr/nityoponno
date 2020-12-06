@@ -11,28 +11,51 @@ Version: 1.0
 // Tooltip
 $('[data-toggle="tooltip"]').tooltip();
 
+
+$(window).on('scroll', function () {
+  var menu_area = $('.navbar-fixed');
+  if ($(window).scrollTop() > 200) {
+    menu_area.addClass('fixed-top');
+  } else {
+    menu_area.removeClass('fixed-top');
+  }
+});
+
+
 // Categories Slider
 $('.categories-slider').slick({
   slidesToScroll: 3,
-  slidesToShow: 8,
+  slidesToShow: 6,
   arrows: true,
   responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        centerPadding: '40px',
+        slidesToShow: 5
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        centerPadding: '40px',
+        slidesToShow: 4
+      }
+    },
     {
       breakpoint: 768,
       settings: {
         arrows: false,
-        centerMode: true,
         centerPadding: '40px',
         slidesToShow: 3
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         arrows: false,
-        centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 3
+        slidesToShow: 2
       }
     }
   ]
